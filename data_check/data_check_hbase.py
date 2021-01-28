@@ -10,7 +10,7 @@ host = 'GWSSI-CDH0105'
 path = '/Users/wenfanzhou/Desktop/javaProject/sample/hbase.csv'
 table_name = 'T1:TESTSTREAMSETS'
 row_key = 'id'
-fields = {'id':'data:id','name':'data:name','email':'data:email'}
+fields = {'id':'data:id','name':'data:name', 'email':'data:email'}
 
 def get_hbase(host):
 
