@@ -1,5 +1,6 @@
 # pip3 install requests
 # urls for request
+# 本地文档到hbase
 
 import requests, demjson
 

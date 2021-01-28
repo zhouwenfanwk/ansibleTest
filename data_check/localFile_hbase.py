@@ -17,7 +17,6 @@ def get_hbase(host):
     try:
 
         socket = TSocket.TSocket(host, 9090)
-        # socket = TSocket.TSocket(host, 9090)
         socket.setTimeout(5000)
         transport = TTransport.TBufferedTransport(socket)
         protocol = TBinaryProtocol.TBinaryProtocol(transport)
@@ -33,7 +32,6 @@ def get_hbase(host):
 
     return client
 
-
 def get_localFile(path):
     if path == '':
         raise Exception('None File Path')
@@ -46,7 +44,6 @@ def get_localFile(path):
         raise Exception('file not exist')
 
 def data_check(hbase_client, csv_file, table_name, fields, row_key):
-    headers = []
     if not csv_file:
         raise Exception('empty file')
 
